@@ -1,0 +1,31 @@
+{
+    "category": "Function",
+    "name": "ValueTrig",
+    "inputs": 1,
+    "outputs": 1,
+    "parameters": [
+        {
+            "name": "Value",
+            "type": "int",
+            "default": 7,
+            "options": [
+                ""
+            ],
+            "value": 7
+        }
+    ],
+    "labels": {
+        "input": [],
+        "output": []
+    },
+    "schematic_pins": {
+        "inputs": [
+            1
+        ],
+        "outputs": [
+            1
+        ]
+    },
+    "repository": "https://github.com/nBlocksStudioNodes/nblocks_valuetrig",
+    "revision": ""
+}
