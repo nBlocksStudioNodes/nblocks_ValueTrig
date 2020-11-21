@@ -1,19 +1,17 @@
-#ifndef __NB_ValueTrig
-#define __NB_ValueTrig
+#ifndef __NB_COUNTER
+#define __NB_COUNTER
 
 #include "mbed.h"
 #include "nworkbench.h"
 
-class nBlock_ValueTrig: public nBlockSimpleNode<1> {
-
+class nBlock_Counter: public nBlockSimpleNode<1> {
 public:
-    nBlock_ValueTrig(uint32_t const_value);
+    nBlock_Counter(uint32_t const_value);
     void triggerInput(nBlocks_Message message);
 	void endFrame(void);
-
+   
 private:
-	uint32_t constant_number;
-	uint32_t triggered_flag;	
+	uint32_t _val;   	
 };
 
 #endif
